@@ -19,18 +19,22 @@ Para rodar este projeto localmente, você precisará configurar sua chave SSH:
 
 1. **Clone o repositório:**
    ```bash
+   
    git clone git@github.com:jenifferpires/into_Devops.git
+   
+
 Entre na pasta:
 
-Bash
+```Bash
 
 cd into_Devops
+```
 
 ✍️ Autor
 Desenvolvido por Jeniffer Pires
 
-🌐Meu GitHub
+🌐[Meu GitHub](https://gemini.google.com/app/e6206bb3b769f03e?hl=pt-BR#:~:text=por%20Jeniffer%20Pires-,%F0%9F%8C%90Meu%20GitHub,-%F0%9F%92%BCMeu%20LinkedIn)
 
-💼Meu LinkedIn
+💼[Meu LinkedIn](https://www.linkedin.com/in/jeniffer-pires-a5a8678a/)
 
 Este projeto é fruto de estudos baseados em guias práticos de Git e GitHub.
