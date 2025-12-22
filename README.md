@@ -1,45 +1,42 @@
 # 🚀 Into DevOps - Jornada de Aprendizado
 
-Este repositório foi criado para documentar minha evolução e armazenar projetos práticos sobre cultura DevOps, automação, infraestrutura e ferramentas de desenvolvimento.
+Este repositório documenta minha evolução técnica em cultura DevOps, focando em automação de infraestrutura, segurança de dados e conteinerização.
 
-## 📌 Sobre o Projeto
-O objetivo principal deste projeto é consolidar conhecimentos em:
-* **Git & GitHub:** Fluxos de trabalho, SSH e versionamento.
-* **Linux/Terminal:** Automação via Bash.
-* **CI/CD:** Pipelines de integração contínua (em breve).
-* **Docker:** Conteinerização de aplicações (em breve).
+## 📌 Evolução do Projeto
+O projeto está organizado em módulos práticos que simulam desafios reais de administração de sistemas:
 
-## 🛠️ Tecnologias Utilizadas
-* [Git](https://git-scm.com/) - Sistema de versionamento.
-* [Markdown](https://www.markdownguide.org/) - Escrita de documentação.
-* [Terminal Linux/Git Bash] - Execução de comandos.
+* **Automação com Bash:** Criação de scripts para monitoramento de recursos do sistema (CPU, Memória e Disco).
+* **Gestão de Logs e Backup:** Rotinas de compactação de dados (`.tar.gz`) com verificações condicionais.
+* **Docker & Containers:** Transformação de scripts locais em micro-serviços isolados e portáteis.
+* **Versionamento Profissional:** Fluxo de trabalho baseado em Git com documentação técnica rigorosa.
 
-## 🚀 Como replicar este ambiente
-Para rodar este projeto localmente, você precisará configurar sua chave SSH:
+## 📁 Estrutura de Pastas
+* `/scripts`: Scripts de monitoramento de sistema (`monitor.sh`).
+* `/logs`: Automação de backups e integração com agendadores de tarefas.
+* `/docker-study`: Receitas de infraestrutura (Dockerfiles) para isolamento de aplicações.
 
-1. **Clone o repositório:**
-   ```bash
-   
-   git clone git@github.com:jenifferpires/into_Devops.git
-   
+## 🛠️ Tecnologias e Ferramentas
+* **Linux/Bash:** Linguagem principal para automação de tarefas.
+* **Docker:** Conteinerização para garantir que o projeto rode em qualquer ambiente.
+* **Git/GitHub:** Controle de versão e histórico de mudanças.
+* **Ambiente Híbrido:** Estratégias de compatibilidade entre Windows (Host) e Linux (Container/Bash).
 
-Entre na pasta:
+## 🐳 Docker: O fim do "Na minha máquina funciona"
+Recentemente, implementei o isolamento do script de monitoramento utilizando Docker. 
+**Aprendizados chave:**
+1.  **Imutabilidade:** Criação de imagens Docker para garantir que o ambiente de execução seja sempre o mesmo.
+2.  **Eficiência:** Uso de camadas (layers) para builds mais rápidos.
+3.  **Portabilidade:** O script agora pode ser executado em qualquer servidor que suporte Docker, sem necessidade de configurar dependências manualmente.
 
-```Bash
 
-cd into_Devops
-```
 
-✍️ Autor
-Desenvolvido por Jeniffer Pires
-
-🌐[Meu GitHub](https://gemini.google.com/app/e6206bb3b769f03e?hl=pt-BR#:~:text=por%20Jeniffer%20Pires-,%F0%9F%8C%90Meu%20GitHub,-%F0%9F%92%BCMeu%20LinkedIn)
-
-💼[Meu LinkedIn](https://www.linkedin.com/in/jeniffer-pires-a5a8678a/)
-
-Este projeto é fruto de estudos baseados em guias práticos de Git e GitHub.
+## ⏰ Automação e Resiliência
+Para garantir a execução das rotinas sem intervenção humana:
+* **No Linux:** Planejado para uso com `cron`.
+* **No Windows:** Implementada ponte via arquivo `.bat` integrado ao **Agendador de Tarefas**, garantindo que o backup de logs ocorra de forma consistente.
 
 ---
 
-## ⏰ Automação (Ambiente Windows)
-Como o ambiente de desenvolvimento atual é Windows, a automação das rotinas de backup foi estruturada para integrar o **Script Bash** com o **Agendador de Tarefas**, utilizando um arquivo `.bat` como gatilho para o ambiente Git Bash.
+✍️ **Autor:** Desenvolvido por Jeniffer Pires  
+🌐 [Meu GitHub](https://github.com/jenifferpires) | 
+💼 [Meu LinkedIn](https://www.linkedin.com/in/jeniffer-pires-a5a8678a/)
